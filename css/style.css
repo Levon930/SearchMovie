@@ -1,0 +1,96 @@
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.film {
+  width: 228px;
+  text-align: center;
+
+  margin: 5px;
+}
+
+.item img {
+  margin-top: 8px;
+  background-color: transparent;
+  width: 200px;
+}
+.item p {
+  text-align: center;
+  width: 200px;
+  background-color: transparent;
+}
+.pop {
+  width: 100%;
+  color: blue;
+  position: relative;
+  text-align: center;
+}
+.pop::after {
+  content: "\f063";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: gray;
+  animation: anim 500ms infinite linear;
+  margin-left: 10px;
+}
+.spinner {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 10px solid;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-top-color: teal;
+  border-right-color: gray;
+  border-bottom-color: green;
+  animation: spin 500ms infinite linear;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.about img {
+  width: 400px;
+}
+.info {
+  margin-left: 50px;
+}
+.info .name {
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+}
+.info span {
+  color: blue;
+}
+.season {
+  color: blue;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+.trailer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+iframe {
+  padding-top: 10px;
+  margin: 0 auto;
+}
